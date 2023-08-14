@@ -1,19 +1,26 @@
 void main () {
-    print('object');
-    String greet = greeting();
-    print(greet);
-    String name = namef();
-    print(name);
-    int age = agef();
-    print(age);
+    List names = ['John', 'Paul', 'George', 'Ringo'];
+
+    print(names);
+
+    names.forEach((name) {
+        print(name);
+    });
+
+    names.add('Elon');
+
+    print(names);
+    
+    names.forEach((name) {
+        print(name);
+    });
+
+    names.remove('Ringo');
+
+    print(names);
+    
+    names.forEach((name) {
+        print(name);
+    });
 }
 
-String greeting() {
-    return 'Hello';
-}
-
-String namef() => 'John'; //same as return 'John';
-
-int agef() {
-    return 25;
-}
