@@ -1,24 +1,29 @@
 void main () {
-    List<String> names = ['John', 'Paul', 'George', 'Ringo'];
-    List<int> age = [1,2,3];
-    List<bool> isMale = [true, false];
+    User user1 = User('Mario', 20);
+    print(user1.name);
+    print(user1.age);
 
-    print(names);
+    User user2 = User('Jay', 25);
+    print(user2.name);
+    print(user2.age);
+}
 
-    names.forEach((name) {
-        print(name);
-    });
+class User {
+    String name = '';
+    int age = 0;
 
-    print(age);
+    // Constructor, requires name and age to be declared
+    User(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-    age.forEach((age) {
-        print(age);
-    });
+    void setName(String name) {
+        this.name = name;
+    }
 
-    print(isMale);
-
-    isMale.forEach((isMale) {
-        print(isMale);
-    });
+    void setAge(int age) {
+        this.age = age;
+    }
 }
 
