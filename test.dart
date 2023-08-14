@@ -1,5 +1,7 @@
 void main () {
-    List names = ['John', 'Paul', 'George', 'Ringo'];
+    List<String> names = ['John', 'Paul', 'George', 'Ringo'];
+    List<int> age = [1,2,3];
+    List<bool> isMale = [true, false];
 
     print(names);
 
@@ -7,20 +9,16 @@ void main () {
         print(name);
     });
 
-    names.add('Elon');
+    print(age);
 
-    print(names);
-    
-    names.forEach((name) {
-        print(name);
+    age.forEach((age) {
+        print(age);
     });
 
-    names.remove('Ringo');
+    print(isMale);
 
-    print(names);
-    
-    names.forEach((name) {
-        print(name);
+    isMale.forEach((isMale) {
+        print(isMale);
     });
 }
 
